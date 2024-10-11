@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>The Doors</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.ico" type="image/png">
+</head>
+<body class="bg-black text-white min-h-screen">
+
+    <div class="flex">
+        <div class="sidebar bg-black w-1/4 p-6">
+            <div class="flex mb-12">
+                <img src="TheDoorsLogo.jpg" alt="The Doors Logo" class="w-1/2 rounded-xl mx-auto">
+            </div>
+            <hr class="mb-5 mt-5 border-white">
+
+            <ul class="space-y-4">
+                <li>
+                    <a href="index.html" class="block text-xl text-white px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 hover:underline transition duration-300 ease-in-out">inicio</a>
+                </li>
+                <li>
+                    <a href='addAlbum.html' class="block text-xl text-white px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 hover:underline">Añadir Álbum</a>
+                </li>
+                <li>
+                    <a href='tickets.html' class="block text-xl text-white px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 hover:underline">Entradas</a>
+                </li>
+                <li>
+                    <a href='logIn.html' class="block text-xl text-white px-4 py-2 rounded-lg bg-red-600 hover:bg-red-500 hover:underline">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content w-3/4 p-10">
+            <h1 class="text-5xl font-bold border-b-4 pb-2 mb-10">Añadir Canción</h1>
+            
+            <form class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <label for="song-title" class="block text-2xl font-semibold mb-2">Título de la Canción</label>
+                    <input type="text" id="song-title" class="w-full p-3 rounded-lg bg-gray-700 text-white" placeholder="Ingresa el título de la canción">
+                </div>
+
+                <div class="mb-6">
+                    <label for="duration" class="block text-2xl font-semibold mb-2">Duración</label>
+                    <input type="text" id="duration" class="w-full p-3 rounded-lg bg-gray-700 text-white" placeholder="Ingresa la duración (ej. 3:45)">
+                </div>
+
+                <div class="mb-6">
+                    <label for="spotify-link" class="block text-2xl font-semibold mb-2">Enlace de Spotify</label>
+                    <input type="text" id="spotify-link" class="w-full p-3 rounded-lg bg-gray-700 text-white" placeholder="Ingresa el url de la cancion">
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="space-x-4">
+                        <button type="submit" class="px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-500">add song</button>
+                        <a class="px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-500">Cancelar</a>
+                    </div>
+                    <a href="index.html" class="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-500">Volver a Inicio</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

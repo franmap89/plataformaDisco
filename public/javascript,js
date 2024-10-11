@@ -1,0 +1,16 @@
+const favoriteRecords = ["", "", "",""];
+function addFavorites(favorites) {
+  const imgs = document.querySelectorAll("img");
+
+  imgs.forEach((img) => {
+    if (favorites.includes(img.name)) {
+      const icon = document.createElement("i");
+      icon.classList.add("fa-solid");
+      icon.classList.add("fa-star");
+      img.parentNode.appendChild(icon);
+      img.parentElement.classList.add("favorite");
+    }
+  });
+}
+
+addFavorites(favoriteRecords)
