@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 
-const Propiedad = new mongoose.Schema({
+
+const Users = new mongoose.Schema({
     Nombre: { type: String,  required: true },
     Apellido: { type: String,  required: true },
     email: {
@@ -19,3 +20,4 @@ const Propiedad = new mongoose.Schema({
     Favoritos: { type: String },
   });
 
+module.exports = mongoose.model("Users",Users)
